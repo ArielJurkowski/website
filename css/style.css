@@ -14,7 +14,13 @@
 	align-items: center;
 }
 
+.articles {
+	font-size: 16px;
+}
 
+.articles a, a.articles {
+	text-decoration: underline;
+}
 
 .scaled-icon {
 	transform: scale(2);
