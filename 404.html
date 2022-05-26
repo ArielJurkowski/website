@@ -10,6 +10,6 @@
 	var matched = redirects.find(x => path.includes(x.match));
 	
 	if(matched) window.location.href = matched.link;
-	else location.href = window.location.host;
+	else location.href = window.location.origin;
 	
 </script>
