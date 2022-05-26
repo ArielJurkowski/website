@@ -1,0 +1,15 @@
+<script>
+	
+	const redirects = [ 
+		{ match: "pftr-steam", link: "https://store.steampowered.com/app/1383250/Please_Fix_The_Road/" },
+		{ match: "pftr-gog", link: "https://www.gog.com/game/please_fix_the_road" },
+		{ match: "pftr-itch", link: "https://arieljurkowski.itch.io/please-fix-the-road" }
+	];
+	
+	let path = window.location.pathname.toLowerCase();
+	var matched = redirects.find(x => path.includes(x.match));
+	
+	if(matched) window.location.href = matched.link;
+	else location.href = window.location.host;
+	
+</script>
