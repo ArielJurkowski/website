@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="photoswipe/photoswipe.css">
 
-	<meta name="twitter:title" content="ARIELEK>
+	<meta name="twitter:title" content="ARIELEK">
 	<meta name="twitter:description" content="Solo game developer from Poland focused on creating PC and CONSOLE games.">
 	<meta name="twitter:image" content="https://arielek.com/img/twitter-card.jpg">
 	<meta name="twitter:site" content="@ArielJurkowski">
@@ -51,6 +51,13 @@
 		var heroContent = document.getElementsByClassName("hero-content")[0];
 		heroContent.classList.add("loaded-fonts")
 	});
+	
+	addEventListener("load", (event) => {
+		var hero = document.getElementById("hero-video");
+		console.log(hero);
+		hero.innerHTML = '<video autoplay="" muted="" loop="" playsinline=""><source src="assets/hero-video.mp4" type="video/mp4"></video>';
+	});
+	
 
 </script>
 
@@ -86,10 +93,8 @@
 </nav>
 
 <section class="hero">
-	<div class="hero-video">
-		<video autoplay="" muted="" loop="" playsinline="">
-			<source src="assets/hero-video.mp4" type="video/mp4">
-		</video>
+	<div class="hero-video" id="hero-video">
+
 	</div>
 	
 	<div class="hero-body">
@@ -176,11 +181,6 @@
 	</div>
 	
 	<div class="spacer"></div>
-	
-	<div class="video-wrap"><div class="video-container">
-		
-	</div></div>
-
 	
 	<div class="media-grid pswp-gallery pswp-gallery--single-column" id="pftr-gallery">
 		<div class="media-item-video">

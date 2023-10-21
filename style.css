@@ -696,19 +696,10 @@ section {
   }
 }
 
-
-
-
-
-
-
 .newsletter {
 	--section-bg: #1c2737;
 	padding: 70px 0 100px;
 }
-
-
-
 
 #mc_embed_signup {
 	display: flex;
