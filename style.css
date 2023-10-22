@@ -332,6 +332,7 @@ section {
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.42), 0 5px 8px rgba(0, 0, 0, 0.54);
 	transition: all 250ms ease-in-out;
 	border: var(--shine-border) solid #FFF0;
+	font-size: 0px;
 }
 
 .game .img-shine.wip {
