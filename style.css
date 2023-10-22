@@ -116,7 +116,7 @@ nav a:hover:before {
 	transition: all 0.15s ease-out 0;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
 	nav a.logo-link:hover:before {
 		bottom: -18px;
 	}
@@ -293,7 +293,7 @@ section {
 }
 
 .mask.mask-mini {
-	transform: scaleY(0.5) translateY(7px)
+	transform: scaleY(0.5) translateY(8px)
 }
 
 .mask.mask-reverse {
@@ -348,7 +348,7 @@ section {
 	cursor: not-allowed;
 }
 
-@media (hover: hover) { 
+@media (hover: hover) and (pointer: fine) { 
 	.game .img-shine:hover {
 		transform: scale(1.1) translateY(-15px) rotateX(3deg);
 		box-shadow: 0 20px 28px rgba(0, 0, 0, 0.45), 0 11px 10px rgba(0, 0, 0, 0.42);
@@ -374,7 +374,7 @@ section {
 	transition: 0.6s;
 } 
 
-@media (hover: hover) { 
+@media (hover: hover) and (pointer: fine) { 
 	.game .img-shine:hover:after {
 		left: 180%;
 		background: rgba(255, 255, 255, 0.3);
@@ -469,7 +469,7 @@ section {
 	position: relative;
 }
 
-@media (hover: hover) { 
+@media (hover: hover) and (pointer: fine) { 
 	.media-grid img:hover {
 		filter: contrast(1.25);
 	}
@@ -532,7 +532,7 @@ section {
 	transform: translateY(-1px);
 }
 
-@media (hover: hover) { 
+@media (hover: hover) and (pointer: fine) { 
 	.stores a:hover {
 		transform: translateY(-10px);
 		z-index: 2;
@@ -557,7 +557,7 @@ section {
 
 }
 
-@media (hover: hover) { 
+@media (hover: hover) and (pointer: fine) { 
 	.stores a:hover::before {
 		opacity: 1;
 	}
@@ -646,7 +646,7 @@ section {
 	transition: all 0.15s ease-out;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
 	.press-card:hover {
 		transition: all 0.15s ease-in;
 		transform: translateY(-10px);
@@ -671,7 +671,7 @@ section {
 	opacity: 0;
 }
 
-@media (hover: hover) { 
+@media (hover: hover) and (pointer: fine) { 
 	.press-card:hover::before {
 		opacity: 1;
 		box-shadow: 0 15px 15px 1px rgba(0, 0, 0, 0.2);
@@ -799,7 +799,7 @@ div.mce_inline_error, #mce-error-response {
 	transition: all 0.2s ease-in-out;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
 	#mce-EMAIL:hover, #mc-embedded-subscribe:hover {
 		opacity: 1;
 	}
