@@ -44,7 +44,7 @@
 
 <script>
 	window.onscroll = () => {
-		let isScrolled = (window.pageYOffset || document.documentElement.scrollTop || 0) > 100;
+		let isScrolled = (window.pageYOffset || document.documentElement.scrollTop || 0) > 50;
 		let navClasses = document.getElementsByTagName("nav")[0].classList;
 		isScrolled ? navClasses.add("scrolled") : navClasses.remove("scrolled");
 	}
@@ -109,7 +109,7 @@
 </section>
 
 <section class="newsletter">
-	<div class="mask"></div>
+	<div class="mask mask-reverse"></div>
 
 					<!-- Begin Mailchimp Signup Form -->
 
