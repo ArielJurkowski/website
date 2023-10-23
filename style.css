@@ -467,6 +467,7 @@ section {
 .media-grid img {
 	transition: all 200ms ease-in-out;
 	position: relative;
+	width: 100%;
 }
 
 @media (hover: hover) and (pointer: fine) { 
