@@ -1,0 +1,23 @@
+{
+  "name": "arielek-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+	"setup": "npm i -g live-server",
+    "serve": "live-server --port=80 --open=./ --entry-file=index.html --wait=100"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArielJurkowski/arieljurkowski.github.io.git"
+  },
+  "author": "Ariel Jurkowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArielJurkowski/arieljurkowski.github.io/issues"
+  },
+  "homepage": "https://arielek.com",
+  "dependencies": {
+
+  }
+}
