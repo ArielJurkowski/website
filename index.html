@@ -43,23 +43,26 @@
 <body>
 
 <script>
+
+	// Top bar scroll
 	window.onscroll = () => {
 		let isScrolled = (window.pageYOffset || document.documentElement.scrollTop || 0) > 50;
 		let navClasses = document.getElementsByTagName("nav")[0].classList;
 		isScrolled ? navClasses.add("scrolled") : navClasses.remove("scrolled");
 	}
 	
+	// Show animation after fonts loaded
 	document.fonts.ready.then(function () {
 		var heroContent = document.getElementsByClassName("hero-content")[0];
 		heroContent.classList.add("loaded-fonts")
 	});
 	
+	// Show hero video after page loaded 
 	addEventListener("load", (event) => {
 		var hero = document.getElementById("hero-video");
 		hero.innerHTML = '<video autoplay="" muted="" loop="" playsinline=""><source src="assets/hero-video.mp4" type="video/mp4"></video>';
 	});
 	
-
 </script>
 
 <nav>
@@ -175,9 +178,9 @@
 			<a href="https://www.gog.com/game/please_fix_the_road" target="_blank"><img src="assets/stores/gog.png" alt="Please Fix The Road on GOG"/></a>
 		</div>
 		<div class="stores-console">
-			<a href="https://arielek.com" target="_blank"><img src="assets/stores/switch.png" alt="Please Fix The Road on Switch"/></a>
-			<a href="https://arielek.com" target="_blank"><img src="assets/stores/xbox.png" alt="Please Fix The Road on XBOX" /></a>
-			<a href="https://arielek.com" target="_blank"><img src="assets/stores/ps.png" alt="Please Fix The Road on PlayStation" /></a>
+			<a href="https://www.nintendo.com/us/store/products/please-fix-the-road-switch/" target="_blank"><img src="assets/stores/switch.png" alt="Please Fix The Road on Switch"/></a>
+			<a href="https://www.xbox.com/en-US/games/store/please-fix-the-road/9npwtqhjlh64" target="_blank"><img src="assets/stores/xbox.png" alt="Please Fix The Road on XBOX" /></a>
+			<a href="https://store.playstation.com/en-us/concept/10009773" target="_blank"><img src="assets/stores/ps.png" alt="Please Fix The Road on PlayStation" /></a>
 		</div>
 	</div>
 	
@@ -185,7 +188,7 @@
 	
 	<div class="media-grid pswp-gallery pswp-gallery--single-column" id="pftr-gallery">
 		<div class="media-item-video">
-			<iframe title="Please Fix The Road Release Trailer" width="1280" height="720" class="video-player" src="https://www.youtube.com/embed/JJq2q4DLrJg?wmode=opaque&rel=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+			<iframe title="Please Fix The Road Release Trailer" width="1280" height="720" class="video-player" src="https://www.youtube.com/embed/JJq2q4DLrJg?wmode=opaque&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 		</div>
 		
 		

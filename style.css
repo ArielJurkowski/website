@@ -595,13 +595,7 @@ section {
 	}
 }
 
-.stores-console {
-	opacity: 0.3;
-	filter: blur(1.5px);
-	cursor: not-allowed !important;
-	pointer-events: none;
-	position: relative;
-}
+
 
 @media screen and (max-width: 700px) {
 	.stores {
