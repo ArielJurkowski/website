@@ -317,13 +317,14 @@ section {
 	padding: 0 var(--page-padding);
 	max-width: calc(var(--page-width) + var(--page-padding) * 2);
 	--shine-border: 0px;
-	flex-direction: column;
+	flex-direction: column-reverse;
 }
 
 .game {
 	display: flex;
 	flex-direction: column;
 	perspective: 400px;
+	flex: 1;
 }
 
 .game:hover {
