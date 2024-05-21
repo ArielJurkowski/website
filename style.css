@@ -175,6 +175,18 @@ section {
 	min-height: max(500px, 60vh);
 }
 
+.hero-title-for-robots-only-because-googles-description-is-wrong {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .hero-body {
 	position: absolute;
 	top: 150px;
@@ -403,8 +415,25 @@ section {
 	line-height: 1.4em;
 }
 
+@media screen and (min-width: 340px) {
+	.games {
+		flex-direction: row;
+	}
+	
+	.game strong {
+		font-size: 18px;
+		margin-top: 15px;
+	}
+	
+	.game p {
+		margin-top: 10px;
+		font-size: 14px;
+		line-height: 1.5em;
+	}
+}
 
-@media screen and (min-width: 600px) {
+
+@media screen and (min-width: 500px) {
 	.games {
 		flex-direction: row;
 	}
